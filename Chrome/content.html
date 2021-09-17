@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CouponsCom</title>
+    <style>
+        body {
+            width: 200px;
+            padding: 32px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        .main h1 {
+            font-size: 1rem;
+        }
+
+        .main button {
+            border: none;
+            padding: 8px 32px;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        .active {
+            background-color: forestgreen;
+        }
+
+        .deactive {
+            background-color: red;
+        }
+
+        .options {
+            display: none;
+        }
+
+        .options.show {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .options .chk-cont{
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="https://cdn.cpnscdn.com/static.coupons.com/Sites/img/urban/couponscom_logo_color.svg">
+        </div>
+        <h1>DH Local Testing</h1>
+        <div class="options">
+            <div class="chk-cont">
+                <input id="header" type="checkbox" checked>
+                <label for="header">Header</label>
+            </div>
+            <div class="chk-cont">
+                <input id="footer" type="checkbox">
+                <label for="footer">Footer</label>
+            </div>
+        </div>
+        <button class="">Activate</button>
+
+    </div>
+</body>
+<script src="content.js"></script>
+
+</html>

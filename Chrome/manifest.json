@@ -1,0 +1,23 @@
+{
+    "name":"CouponsCom-LocalDH",
+    "version":"1.0.0",
+    "manifest_version":2,
+    "icons":{
+        "16":"favicon-16x16.webp",
+        "48":"favicon-96x96.webp",
+        "128":"favicon-128x128.webp"
+    },
+    "content_scripts":[
+        {
+            "matches":["https://www.coupons.com/*"],
+            "js": ["main.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "content.html",
+        "default_title": "CouponsCom LocalDH"
+    },
+    "background": {
+        "scripts": ["bg.js"]
+    }
+}
